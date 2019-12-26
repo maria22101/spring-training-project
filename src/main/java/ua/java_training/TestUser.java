@@ -8,10 +8,12 @@ public class TestUser {
                 "applicationContext.xml"
         );
 
-        User user = context.getBean("userBean", User.class);
-        System.out.println(user.getFirstName());
-        System.out.println(user.getLastName());
-        System.out.println(user.getAge());
+        User user = context.getBean("user", User.class);
+//        System.out.println(user.getFirstName());
+//        System.out.println(user.getLastName());
+//        System.out.println(user.getAge());
+
+        user.sayHello();
 
         context.close();
     }

@@ -1,5 +1,9 @@
 package ua.java_training;
 
+import org.springframework.stereotype.Component;
+import sun.misc.Contended;
+
+@Component
 public class User {
     private String firstName;
     private String lastName;
@@ -12,6 +16,10 @@ public class User {
     }
 
     public User() {
+    }
+
+    public void sayHello() {
+        System.out.println("Hello!");
     }
 
     public String getFirstName() {

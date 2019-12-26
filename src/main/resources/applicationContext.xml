@@ -9,11 +9,13 @@
 
     <context:property-placeholder location="classpath:user.properties"/>
 
-    <bean id="userBean"
-          class="ua.java_training.User">
-        <property name="firstName" value="${user.firstName}"/>
-        <property name="lastName" value="${user.lastName}"/>
-        <property name="age" value="${user.age}"/>
-    </bean>
+    <!--    <bean id="userBean"-->
+    <!--          class="ua.java_training.User">-->
+    <!--        <property name="firstName" value="${user.firstName}"/>-->
+    <!--        <property name="lastName" value="${user.lastName}"/>-->
+    <!--        <property name="age" value="${user.age}"/>-->
+    <!--    </bean>-->
+
+    <context:component-scan base-package="ua.java_training"/>
 
 </beans>
